@@ -1,0 +1,5 @@
+{
+  "name": "Plant Environment Simulator",
+  "description": "An interactive web application that demonstrates the effects of environmental factors such as temperature, wind, and drought on a plant's health and growth.",
+  "requestFramePermissions": []
+}

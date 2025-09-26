@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>محاكي بيئة النبات</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Cairo', sans-serif; /* A nice Arabic font */
+      }
+      /* Custom slider track */
+      input[type="range"]::-webkit-slider-runnable-track {
+        height: 8px;
+        border-radius: 4px;
+      }
+      /* Custom slider thumb for WebKit browsers */
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid white;
+        background: var(--thumb-color, #9ca3af); /* Use CSS variable */
+        margin-top: -6px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+      }
+       /* Custom slider thumb for Firefox */
+      input[type="range"]::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid white;
+        background: var(--thumb-color, #9ca3af); /* Use CSS variable */
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-100 dark:bg-gray-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
